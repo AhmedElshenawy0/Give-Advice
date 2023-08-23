@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Give-Advice/static/css/main.1408d2d1.css",
+    "main.js": "/Give-Advice/static/js/main.7fa7a23e.js",
+    "static/media/image.jpg": "/Give-Advice/static/media/image.74253a34d0ebde161954.jpg",
+    "index.html": "/Give-Advice/index.html",
+    "main.1408d2d1.css.map": "/Give-Advice/static/css/main.1408d2d1.css.map",
+    "main.7fa7a23e.js.map": "/Give-Advice/static/js/main.7fa7a23e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1408d2d1.css",
+    "static/js/main.7fa7a23e.js"
+  ]
+}
