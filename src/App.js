@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import { useState } from "react";
+import "./App.css";
+import ReactAudioPlayer from "react-audio-player";
 
 function App() {
+  const [advice, setAdvice] = useState();
+
+  const handleClick = () => [
+    axios
+      .get("https://api.adviceslip.com/advice")
+      .then((response) => setAdvice(response.data.slip.advice)),
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="adice-container">
+        <button onClick={handleClick}>Give Me Advice</button>
+
+        {advice && <p>{advice}</p>}
+      </div>
     </div>
   );
 }
