@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <div className="adice-container">
-        <button onClick={handleClick}>Give Me Advice</button>
+        <button onClick={handleClick}>Give Me Your Advice</button>
 
         {advice && <p>{advice}</p>}
       </div>
